@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Ideas | The Green Talk Podcast</title>
+
+  <!-- 
+    Page: Video Ideas Submission Form
+    Author: Ethan Mata
+    Email: thegreentalkpodcast@gmail.com
+    Date: July 10, 2025
+    Purpose: Allows listeners to submit video topic ideas via FormSubmit.
+  -->
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #101010;
+      color: #f0f0f0;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    header {
+      background-color: #003300;
+      padding: 30px 20px 10px;
+    }
+
+    header img {
+      width: 150px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #7fff00;
+      margin-top: 10px;
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      color: #e6e6e6;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #7fff00;
+    }
+
+    .form-box {
+      background-color: #1a1a1a;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0,255,0,0.1);
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      color: #000;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="submit"] {
+      background-color: #7fff00;
+      color: #000;
+      font-weight: bold;
+      margin-top: 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .notice {
+      margin-top: 25px;
+      font-size: 14px;
+      color: #ccc;
+      font-style: italic;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="theGreenTalklogo.jpg" alt="The Green Talk Logo">
+    <h1>Submit Your Video Ideas</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="affiliates.html">Affiliates</a>
+    <a href="request.html">Request an Interview</a>
+    <a href="credits.html">Credits</a>
+  </nav>
+
+  <div class="form-box">
+    <form action="https://formsubmit.co/thegreentalkpodcast@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="VIDEO IDEAS REQUEST">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label for="email">Email (required):</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="name">Your Name (required):</label>
+      <input type="text" id="name" name="Full Name" required>
+
+      <label for="topic">Topic Title (optional but helpful):</label>
+      <input type="text" id="topic" name="Topic Title">
+
+      <label for="details">Idea Details:</label>
+      <textarea id="details" name="Idea Details"></textarea>
+
+      <input type="submit" value="Submit Video Idea">
+    </form>
+
+    <p class="notice">
+      Your idea may inspire a future episode — we’ll review each submission carefully. Thank you for supporting The Green Talk.
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2025 The Green Talk Podcast | Website by Ethan Mata
+  </footer>
+
+</body>
+</html>
